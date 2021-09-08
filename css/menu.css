@@ -1,0 +1,47 @@
+header .contacts {
+    background-color: rgb(255, 197, 65);
+}
+
+@media (min-width: 990px) {
+    header .contacts {
+        padding: 10px 250px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+header .name-connect {
+    color:black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+header .connection {
+    text-decoration: none;
+    color:black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+@media (min-width: 990px) {
+    header .nav{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 250px;
+    }
+}
+
+header .menu {
+    text-decoration: none;
+    color: var(--original-text-color);
+    font-size: 25px;
+}
+
+@media (min-width: 990px) {
+    header .menu {
+        padding-top: 15px;
+        padding-right: 35px;
+    }
+}
+
+

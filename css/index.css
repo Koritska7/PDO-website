@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --title-color: rgb(255, 197, 65);
+  --original-text-color: black;
+  --button-color:rgb(237, 100, 53);
+  --buy-color: rgb(69, 193, 199);
+  --title-font-family: 'Open Sans', sans-serif;
+  --original-font-family: 'Open Sans', sans-serif;
+  --scroll-behavior: smooth;
+}
+
+main .banner-title-page {
+  background-image: url(../img/baner-crane.jpg);
+  background-size: cover;
+  min-height: 100vh;
+}
