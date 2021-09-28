@@ -1,0 +1,73 @@
+main .about {
+    background-color: var(--title-color);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 15px 25px 15px;
+}
+
+@media (min-width: 767px) {
+    main .about {
+      padding-left: 32px;
+      padding-right: 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+}
+  
+@media (min-width: 1280px) {
+    main .about {
+      padding-left: 190px;
+      padding-right: 190px;
+      grid-gap: 30px;
+    }
+}
+
+main .img-about {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: 22.346% 59.824%;
+}
+  
+@media (max-width: 767px) {
+    main .img-about {
+      height: auto;
+      width: auto;
+    }
+}
+
+main .title-about-text {
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    
+}
+
+main .underline {
+    text-decoration: underline var(--buttom-color);
+    color: var(--buttom-color);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+main .about-us-text {
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-indent: 1.5em;
+}
+
+main .li-about {
+    color: white;
+    padding-left: 35px;
+    font-size: 16px;
+}
+
+@media (min-width: 990px) {
+    main .li-about {
+        font-size: 18px;
+    }
+  }

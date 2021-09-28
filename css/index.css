@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2? family = Roboto + Slab & display = swap');
 
 * {
   margin: 0;
@@ -11,17 +11,39 @@ html {
 }
 
 :root {
-  --title-color: rgb(255, 197, 65);
-  --original-text-color: black;
-  --button-color:rgb(237, 100, 53);
-  --buy-color: rgb(69, 193, 199);
-  --title-font-family: 'Open Sans', sans-serif;
-  --original-font-family: 'Open Sans', sans-serif;
+  --title-color: rgb(36, 36, 36);
+  --buttom-color:#e9a251;
+  --title-font-family: 'Roboto Slab', serif;
+  --original-font-family: 'Roboto Slab', serif;
   --scroll-behavior: smooth;
 }
 
-main .banner-title-page {
-  background-image: url(../img/baner-crane.jpg);
-  background-size: cover;
-  min-height: 100vh;
+h2, h3, h4 {
+  font-family: var(--title-font-family); 
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--title-color);
+}
+
+@media (min-width: 728px) {
+  h2, h3, h4 {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 990px) {
+  h2, h3, h4 {
+    font-size: 46px;
+  }
+}
+
+p {
+  font-family: var(--original-font-family); 
+  font-size: 16px;
+}
+
+@media (min-width: 990px) {
+  p {
+    font-size: 18px;
+  }
 }

@@ -1,47 +1,150 @@
 header .contacts {
-    background-color: rgb(255, 197, 65);
+  background-color: var(--title-color);
 }
 
 @media (min-width: 990px) {
-    header .contacts {
-        padding: 10px 250px;
-        display: flex;
-        justify-content: space-between;
-    }
+  header .contacts {
+    padding: 10px 220px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 header .name-connect {
-    color:black;
-    font-size: 17px;
+    color:white;
+    font-size: 16px;
     font-weight: bold;
 }
 
 header .connection {
-    text-decoration: none;
-    color:black;
-    font-size: 17px;
-    font-weight: bold;
+  text-decoration: none;
+  color:white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: var(--title-font-family); 
+  padding-right: 20px;
+  transition: color 0.7s;
+}
+
+header .connection:hover {
+  color: var(--buttom-color);
+}
+
+header .logo-company {
+  width: 110px;
+  padding-right: 10px;
 }
 
 @media (min-width: 990px) {
-    header .nav{
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 250px;
-    }
+  header .title-nav-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 165px 10px 105px;
+  }
+}
+
+@media (min-width: 990px) {
+  header .title-logo-company {
+    display: flex;
+  }
+}
+
+@media (min-width: 990px) {
+  header .title-company {
+    font-size: 15px;
+    color: rgb(68, 65, 65);
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+@media (min-width: 990px) {
+  header .nav {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 header .menu {
-    text-decoration: none;
-    color: var(--original-text-color);
-    font-size: 25px;
+  text-decoration: none;
+  color: rgb(68, 65, 65);
+  font-size: 20px;
+  font-family: var(--title-font-family); 
+  font-weight: 550;
 }
 
 @media (min-width: 990px) {
-    header .menu {
-        padding-top: 15px;
-        padding-right: 35px;
-    }
+  header .menu {
+    padding-right: 35px;
+  }
 }
+
+main .banner-title-page {
+  background-image: url(../img/kran5.jpg);
+  background-size: cover;
+  min-height: 80vh;
+}
+
+main .button {
+  margin-top: 50px;
+  padding-left: 24px;
+}
+ 
+@media (min-width: 767px) {
+  main .button {
+    margin-left: 150px;
+  }
+}
+ 
+@media (max-width: 320px) {
+  main .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+ 
+main .button-products {
+  position: absolute;
+  top: 80%;
+  left: 6%;
+  font-size: 16.5px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1.2em 4.5em;
+  border: 0.1em solid #f8a203;
+  transition: color 0.7s;
+  background-color: #f8a203;
+}
+ 
+main .button-products:hover {
+  color: white;
+  border: 0.1em solid white;
+  background-color: rgba(87, 214, 221, 0);
+  cursor: pointer;
+}
+ 
+main .button-service {
+  position: absolute;
+  top: 80%;
+  left: 26%;
+  font-size: 16.5px;
+  font-weight: bold;
+  color:white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1.2em 4.5em;
+  border: 0.1em solid white;
+  transition: color 0.7s;
+}
+ 
+main .button-service:hover {
+  color: white;
+  border: 0.1em solid #f8a203;
+  background-color: rgba(23, 145, 151, 0);
+  cursor: pointer;
+}
+ 
 
 

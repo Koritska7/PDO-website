@@ -1,0 +1,105 @@
+footer {
+    background-color: var(--title-color);
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 728px) {
+    footer {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+  
+@media (min-width: 990px) {
+    footer {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+@media (min-width: 990px) {
+    footer .footer-company {
+      display: flex;
+      justify-content: space-between;
+    }
+}
+
+footer p {
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+footer .connect-company {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+footer .logo-company {
+    width: 135px;
+    margin-bottom: 10px;
+}
+
+footer .title-company {
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+footer .address-company {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .address{
+    margin-left: 10px;
+}
+
+footer .phone-connection {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .mail-connection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+footer .connection {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    display: flex;
+    text-align: center;
+    margin-left: 10px;
+}
+
+footer .nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer .menu {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    padding-bottom: 15px;
+    font-size: 18px;
+    transition: color 0.7s;
+}
+
+footer .menu:hover {
+    color: #ff8b1f;
+    cursor: pointer;
+}
+
+footer .contacts-bottom {
+    margin-top: 25px;
+    padding-bottom: 10px;
+    color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}

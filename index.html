@@ -4,46 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ООО "ПТО"</title>
+    <link rel="Icon" href="img/pdo-logo.png">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <header>
         <div class="contacts">
-            <p class="name-connect">Тел.:<a class="connection" href="tel:+380503219490"> +38 (050) 321 94 90</a> </p>
-           <a class="connection" href="mailto:pto_alex@ukr.net">pto_alex@ukr.net</a>
+            <div class="tel-contacts">
+                <a class="connection" href="tel:+380503219490"> +38 (050) 321 94 90</a>
+                <a class="connection" href="tel:+380503219490"> +38 (050) 341 14 66</a>
+            </div>
+            <a class="connection" href="mailto:pto_alex@ukr.net">pto_alex@ukr.net</a>
         </div>
-        <div class="nav">
-            <a class="menu" href="#about">О нас</a>
-            <a class="menu" href="#products">Продукция</a>
-            <a class="menu" href="#service">Услуги</a>
-            <a class="menu" href="#contacts">Контакты</a>
+        <div class="title-nav-page">
+            <div class="title-logo-company">
+                <img class="logo-company" src="../img/logo.png" alt="PDO Logo Company">
+                <p class="title-company">ООО "Подъемно-транспортное оборудование"</p>
+            </div>
+            <div class="nav">
+                <a class="menu" href="#about">О компании</a>
+                <a class="menu" href="#products">Продукция</a>
+                <a class="menu" href="#service">Услуги</a>
+                <a class="menu" href="#contacts">Контакты</a>
+            </div>
         </div>
     </header>
     <main>
-           <div class="banner-title-page">
-
-           </div>
-           <div class="products-page">
+        <div class="banner-title-page">
+            <div class="button">
+                <a class="button-products" href="#buy">Продукция</a>
+                <a class="button-service" href="#buy">Услуги</a>
+            </div>
+        </div>
+        <div class="products-page">
             <div id="products"></div>
-               <h2>Продукция</h2>
-           </div>
-           <div class="about">
-            <div id="about"></div>
-            <h2>О нас</h2>
-            <p>ООО «Подъемно-транспортное оборудование» является изготовителем подъемно-транспортного оборудования. Предлагаем изготовление и поставку грузоподъемного оборудования: – кранов мостовых электрических г/п до 60т; – кранов козловых электрических г/п до 35т; – кран-балок опорных и подвесных электрических, ручных г/п до 10т; а также полный перечень запасных частей на данные краны: – крюковые подвески г/п 3,2т, 5т, 10т, 16т; – барабаны подъема в сборе на краны г/п 5т, 10т, 16т; – колеса крановые Ø710, 500, 400мм – тормозные шкивы, зубчатые ступицы, промежуточные валы и другое оборудование. Большой перечень запчастей есть на складе предприятия. Также предлагаем ремонт, реконструкцию указанных кранов. Изготовим стрелу крана башенного КБ-404.4. Наши заказчики не только предприятия Украины, но и Беларуси, Казахстана, России, Монголии, Азербайджана.</p>
-           </div>
-           <div class="service-page">
+               <h2 class="title-products-page">Продукция</h2>
+               <p class="underline">____</p>
+               <div class="carousel-product">
+
+                </div>
+            </div>
+        </div>
+        <div id="about"></div>
+        <div class="about">
+            <img class="img-about" src="../img/baner4.jpg" alt="">
+            <div class="text-about">
+                <h2 class="title-about-text">О компании</h2>
+                <p class="underline">____</p>
+                <p class="about-us-text">ООО «Подъемно-транспортное оборудование» является изготовителем подъемно-транспортного оборудования. Предлагаем изготовление и поставку грузоподъемного оборудования:</p>
+                <ul class="li-about">
+                    <li>кранов мостовых электрических г/п до 60т;</li>
+                    <li>кранов козловых электрических г/п до 35т;</li>
+                    <li>кран-балок опорных и подвесных электрических, ручных г/п до 10т;</li>
+                </ul>    
+                <p class="about-us-text">Также предприятие изготовляет полный перечень запасных частей на данные краны:</p>
+                <ul class="li-about">
+                    <li>крюковые подвески г/п 3,2т, 5т, 10т, 16т;</li>
+                    <li>барабаны подъема в сборе на краны г/п 5т, 10т, 16т;</li>
+                    <li>колеса крановые Ø710, 500, 400мм;</li>
+                    <li>ормозные шкивы, зубчатые ступицы, промежуточные валы и другое оборудование.</li>
+                </ul>
+                <p class="about-us-text">Также предлагаем ремонт, реконструкцию указанных кранов. Изготовим стрелу крана башенного КБ-404.4. Наши заказчики не только предприятия Украины, но и Беларуси, Казахстана, России, Монголии, Азербайджана.</p>   
+            </div>
+        </div>
+        <div class="service-page">
             <div id="service"></div>
-               <h2>Услуги</h2>
-           </div>
-           <div class="clients">
-               <h3>Наши клиенты</h3>
-           </div>
+               <h2 class="title-products-page">Услуги</h2>
+               <p class="underline">____</p>
+        </div>
+        <div class="clients">
+            <h3 class="title-products-page">Наши клиенты</h3>
+            <p class="underline">____</p>
+        </div>
     </main>
     <footer>
-
+        <div class="footer-company">
+            <div class="left-block">
+                <img class="logo-company" src="../img/logo.png" alt="PDO Logo Company">
+                <p class="title-company">ООО "Подъемно-транспортное оборудование"</p>  
+            </div>
+            <div class="nav">
+                <a class="menu" href="#about">О компании</a>
+                <a class="menu" href="#products">Продукция</a>
+                <a class="menu" href="#service">Услуги</a>
+                <a class="menu" href="#contacts">Контакты</a>
+            </div>
+            <div class="right-block">
+                <div class="address-company">
+                    <img src="../img/pngwing.com.png" width="40" alt="">
+                    <div class="location">
+                        <p class="address">28008, Украина, Кировоградская обл.,</p>
+                        <p class="address">г. Александрия, пр.Соборный, д.98, кв.124</p>
+                   </div>
+                </div>
+                <div class="connect-company">
+                    <div class="phone-connection">
+                        <img src="../img/phone.png" width="40" alt="">
+                        <div class="number-phone">
+                            <a class="connection" href="tel:+380503219490"> +38 (050) 321 94 90</a>
+                            <a class="connection" href="tel:+380503219490"> +38 (050) 341 14 66</a>
+                        </div>
+                    </div>
+                    <div class="mail-connection">
+                        <img src="../img/mail.png" width="40" alt="">
+                        <div class="mail-address">
+                            <a class="connection" href="mailto:pto_alex@ukr.net">pto_alex@ukr.net</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts-bottom">
+            <div>
+             <span>&#169; Created by FKCompany</span>
+            </div>
+            <div>
+             <span>All rights Reserved</span>
+            </div>
+        </div>
     </footer>
+
+    <script src="js/carousel-products.js"></script>
 </body>
 </html>
