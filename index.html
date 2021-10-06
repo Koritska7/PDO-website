@@ -10,28 +10,44 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/clients.css">
+    <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <header>
         <div class="contacts">
             <div class="tel-contacts">
-                <a class="connection" href="tel:+380503219490"> +38 (050) 321 94 90</a>
-                <a class="connection" href="tel:+380503219490"> +38 (050) 341 14 66</a>
+                <a class="connection" href="tel:+380503219490">+38 (050) 321 94 90</a>
+                <a class="connection" href="tel:+380503219490">+38 (050) 341 14 66</a>
             </div>
             <a class="connection" href="mailto:pto_alex@ukr.net">pto_alex@ukr.net</a>
         </div>
-        <div class="title-nav-page">
-            <div class="title-logo-company">
-                <img class="logo-company" src="../img/logo.png" alt="PDO Logo Company">
-                <p class="title-company">ООО "Подъемно-транспортное оборудование"</p>
+        <div class="nav-menu">
+            <div class="controlsMenuLine">
+                <div class="open-menu open-mobile-menu-js" style="display: block;">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <div class="close-menu close-mobile-menu-js">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
             </div>
-            <div class="nav">
-                <a class="menu" href="#about">О компании</a>
-                <a class="menu" href="#products">Продукция</a>
-                <a class="menu" href="#service">Услуги</a>
-                <a class="menu" href="#contacts">Контакты</a>
-            </div>
+            <div class="title-nav-page">
+                <div class="title-logo-company">
+                    <img class="logo-company" src="../img/logo.png" alt="PDO Logo Company">
+                    <p class="title-company">ООО "Подъемно-транспортное оборудование"</p>
+                </div>
+                <div class="nav">
+                    <a class="menu" href="#about">О компании</a>
+                    <a class="menu" href="#products">Продукция</a>
+                    <a class="menu" href="#service">Услуги</a>
+                    <a class="menu" href="#contacts">Контакты</a>
+                </div>
+           </div>
         </div>
     </header>
     <main>
@@ -74,12 +90,44 @@
         </div>
         <div class="service-page">
             <div id="service"></div>
-               <h2 class="title-products-page">Услуги</h2>
-               <p class="underline">____</p>
+            <h2 class="title-products-page">Услуги</h2>
+            <p class="underline">____</p>
+            <div class="service-blok">
+                <div class="accordion-wrapper"></div>
+                <img class="service-img" src="../img/kran6.jpg" alt="">
+            </div>
         </div>
         <div class="clients">
             <h3 class="title-products-page">Наши клиенты</h3>
             <p class="underline">____</p>
+            <div class="carousel-clients">
+                <img class="btn-prev" src="../img/left.svg" alt="left-line">
+                <div class="slider-logotypes"></div>
+                <img class="btn-next" src="../img/right.svg" alt="right-line">
+            </div>
+        </div>
+        <div id="contacts"></div>
+        <div class="section-contacts">
+            <div class='contacts-title'>
+                <h2 class="contacts-h2">Контакты</h2>
+                <p class="underline2">____</p>
+                <p class="contacts-p">Спасибо за Ваш интерес к ООО "Подъемно-транспортное оборудование". Пожалуйста, напишите нам или позвоните, если вам нужна дополнительная информация.</p>
+                <div class="section-contacts-phone">
+                    <h3 class="contacts-h3">Телефон</h3>
+                    <p>+38 (050) 321 94 90</p>
+                    <p>+38 (050) 341 14 66</p>
+                </div>  
+            </div>
+              
+            <div class="contacts-form">    
+                    <form action="#" method="post">
+                        <input type="text" placeholder="Полное имя*" required="">
+                        <input type="tel" placeholder="Номер телефона*" required="">
+                        <input type="email" placeholder="Ваш e-mail*" required="">
+                        <textarea name="message" class="form-textarea" cols="30" rows="10" placeholder="Напишите ваше сообщение" required=""></textarea>
+                        <input class="contacts-submit" type="submit" value="Отправить">
+                    </form>
+                </div>
         </div>
     </main>
     <footer>
@@ -129,6 +177,9 @@
         </div>
     </footer>
 
+    <script src="js/menu.js"></script>
     <script src="js/carousel-products.js"></script>
+    <script src="js/accordion-service.js"></script>
+    <script src="js/carousel-clients.js"></script>
 </body>
 </html>

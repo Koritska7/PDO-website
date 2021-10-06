@@ -1,0 +1,88 @@
+main .service-page {
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+main .title-products-page {
+    margin-top: 50px;
+}
+
+@media (min-width: 770px) {
+   main .service-blok {
+       padding-top: 50px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }  
+}
+
+main .service-img {
+    max-width: 550px;
+}
+
+/* Accordion */
+
+.accordion-wrapper {
+	display: flex;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	min-width: 300px;
+	height: 50vh;
+}
+
+@media (min-width: 770px) {
+    main .accordion-wrapper {
+        padding-right: 40px;
+    }
+}
+
+.accordion-item {
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid;
+	border-bottom-color: var(--gray-bottom);
+}
+
+.accordion-item-title {
+	padding: 10px 0px 10px 5px; 
+	cursor: pointer;
+	position: relative;
+	font-family: 'Prata', serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 33px;
+}
+
+.accordion-item-title::before {
+	content: "+";
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: 5px;
+}
+
+@media (min-width: 770px) {
+    main .accordion-item-title {
+        font-size: 20px; 
+    }
+}
+
+.accordion-item-content {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	transition: .5s ease-in-out;
+	font-family: 'Rubik', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25.6px;
+}
+
+.accordion-item.active .accordion-item-content {
+	height: 60px;
+}
+
+.accordion-item.active .accordion-item-title::before {
+	content: "-";
+}

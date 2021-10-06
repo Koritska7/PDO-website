@@ -1,4 +1,9 @@
+header {
+  display: block;
+}
+
 header .contacts {
+  display: none;
   background-color: var(--title-color);
 }
 
@@ -43,10 +48,22 @@ header .logo-company {
   }
 }
 
+header .title-logo-company {
+  padding-top: 20px;
+  padding-left: 15px;
+  background-color: rgb(36, 36, 36);
+}
+
 @media (min-width: 990px) {
   header .title-logo-company {
     display: flex;
+    background-color: white;
   }
+}
+
+header .title-company {
+  color: white;
+  padding-bottom: 30px;
 }
 
 @media (min-width: 990px) {
@@ -146,5 +163,42 @@ main .button-service:hover {
   cursor: pointer;
 }
  
+/*burger-menu*/
+
+.controlsMenuLine {
+  position: absolute;
+  right: 35px;
+  top: 45px;
+  z-index: 1;
+}
+
+@media (min-width: 990px) {
+  .controlsMenuLine {
+    display: none;
+  }
+}
+
+.burger-line {
+  display: block;
+  width: 24px;
+  height: 1.9px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+.close-menu {
+  display: none;
+}
+
+.close-menu .burger-line:first-child {
+  transform: rotate(45deg);
+  position: relative;
+  top: 7px;
+}
+
+.close-menu .burger-line:last-child {
+  transform: rotate(-45deg);
+}
+
 
 
